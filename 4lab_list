@@ -61,7 +61,7 @@ void make(List *list, int n) {
 Node * first_search (List *list, int x, int y) {
     Node *temp = list->head;
     while(temp->next != NULL){
-        if (temp->x == x || temp->y == y){
+        if (temp->x == x & temp->y == y){
             return temp;
         }
         temp = temp->next;
@@ -87,7 +87,6 @@ void delet(List *list, int k) {
     for (i = 0; i < k - 1; i++) temp = temp->next;
     temp->prev->next=temp->next;
     temp->next->prev=temp->prev;
-
 }
 
 int
@@ -105,8 +104,8 @@ main(void)
     print(list);
     delet(list,2);
     print(list);
-    //Node *first = new Node();
-    //first = first_search(list, 0, 0);
-    //printf("%d %d", first->next->x, first->next->y);
+    Node *first = new Node();
+    first = first_search(list, 5,10);
+    printf("%d %d", first->next->x, first->next->y);
     return 0;
 }
