@@ -21,10 +21,10 @@ int my_hash(string &str)
     return abs(hash_value) % 32;
 }
 
-Node *insert_node(string *key, string *value)
+Node *insert_node(string key, string value)
 {
     int hash_value = 0;
     Node *new_node;
-
+    hash_value = my_hash(key);
 
 }
