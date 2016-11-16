@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 
-
 struct Node       //Структура являющаяся звеном списка
 {
     int x;
