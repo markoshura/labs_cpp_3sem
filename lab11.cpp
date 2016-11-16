@@ -35,7 +35,7 @@ public:
         ++head;
         arr.pop_back();
         return elem;
-        
+       
     }
 
     // Кол-во элементов в буфере
