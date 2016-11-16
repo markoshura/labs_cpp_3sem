@@ -19,6 +19,7 @@ private:
         denominator /= gcd;
     }
 public:
+    
     Fraction( int n, int d ) : nominator(n), denominator(d) {
         simplify();
     }
